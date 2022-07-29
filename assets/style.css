@@ -1,0 +1,96 @@
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header =========================================*/
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto !important;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+h1 > img {
+    position: relative;
+    bottom: 5px;
+}
+
+.but_Play {
+    border-radius: 7px;
+    width: 120px;
+    border: 1px solid currentColor;
+    font-weight: bold;
+}
+
+.but_Play:hover {
+    background-color: aliceblue;
+}
+
+/* main ===========================================*/
+
+main {
+    background-color: #7fffd4;
+    flex-grow: 1;
+}
+
+.container {
+    height: 100%;
+}
+
+.content_campo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 70vh;
+    max-width: 100%;
+    aspect-ratio: 1;
+}
+
+.pezzo_campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    cursor: default;
+    user-select: none;
+}
+
+.pezzo_campo.active {
+    background-color: azure;
+}
+
+/* footer ========================================*/
+
+footer {
+    height: auto !important;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    color: #501785;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
